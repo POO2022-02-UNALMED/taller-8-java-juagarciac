@@ -28,7 +28,7 @@ public class Jugador extends Futbolista implements comparable<Jugador>, nece {
 		this.dorsal=dorsal;
 	}
 	public String toString(){
-		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion()+" con el dorsal "+this.getDorsal()+ ". Ha marcado "+this.getGolesMarcados()".";
+		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion()+" con el dorsal "+this.getDorsal()+ ". Ha marcado "+this.getGolesMarcados()+".";
 	}
 	
 	public int compareTo(Jugador por) {
@@ -36,11 +36,12 @@ public class Jugador extends Futbolista implements comparable<Jugador>, nece {
 			return 0;
 			}
 		else {if (this.getGolesMarcados()>por.getGolesMarcados()){
-			return this.getGolesMarcados()-por.getGolesMarcados();
+				return this.getGolesMarcados()-por.getGolesMarcados();
 			}
-		else (this.getGolesMarcados()<por.getGolesMarcados()){
-			return por.getGolesMarcados()-this.getGolesMarcados();
-			}}
+			else {
+				return por.getGolesMarcados()-this.getGolesMarcados();
+				}
+		}
 	}
 }
 
