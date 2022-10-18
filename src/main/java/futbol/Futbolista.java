@@ -34,14 +34,15 @@ public class Futbolista implements Comparable<Futbolista>,nece {
 		public void setEdad(int edad) {
 			this.edad=edad;
 		}
-		
+	@Override
 	public String toString(){
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion()+".";	
 	}
-	
+	@Override
 	public boolean jugarconlasmanos() {
 		return false;
 	}
+	@Override
 	public boolean compareTo(Futbolista por) {
 		if (this.nombre==por.getNombre()) {
 			if(this.edad==por.getEdad()) {
