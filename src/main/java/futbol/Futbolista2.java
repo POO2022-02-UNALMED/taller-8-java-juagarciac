@@ -39,7 +39,7 @@ public class Futbolista2 implements nece {
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+", y juega de "+this.getPosicion()+".";	
 	}
 	@Override
-	public boolean jugarconlasmanos() {
+	public boolean jugarConLasManos() {
 		return false;
 	}
 	

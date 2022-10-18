@@ -4,12 +4,12 @@ import java.util.ArrayList;
 public class Portero extends Futbolista2 implements Comparable<Portero> {
 	public short golesRecibidos;
 	public byte dorsal;
-	public Portero(String nombre,int edad,String posicion,short goles,byte dorsal) {
+	public Portero(String nombre,int edad,short goles,byte dorsal) {
 		super(nombre,edad,"Portero");
 		this.golesRecibidos=goles;
 		this.dorsal=dorsal;
 	}
-	public boolean jugarconlasmanos() {
+	public boolean jugarConLasManos() {
 		return true;
 	}
 	
