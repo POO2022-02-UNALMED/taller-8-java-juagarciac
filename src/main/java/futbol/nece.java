@@ -1,5 +1,5 @@
 package futbol;
 public interface nece {
-	boolean jugarconlasmanos();
+	boolean jugarConLasManos();
 
 }

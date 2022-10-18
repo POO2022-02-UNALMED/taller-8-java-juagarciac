@@ -1,7 +1,7 @@
 package futbol;
 import java.util.ArrayList;
 
-public class Jugador extends Futbolista2 implements Comparable<Jugador>, nece {
+public class Jugador extends Futbolista2 implements Comparable<Jugador> {
 	public short golesMarcados;
 	public byte dorsal;
 	
