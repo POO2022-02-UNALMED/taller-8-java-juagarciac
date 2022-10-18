@@ -37,10 +37,10 @@ public class Jugador extends Futbolista implements Comparable<Jugador>, nece {
 			return 0;
 			}
 		else {if (this.getGolesMarcados()>por.getGolesMarcados()){
-				return this.getGolesMarcados()-por.getGolesMarcados();
+				return (short) this.getGolesMarcados()-por.getGolesMarcados();
 			}
 			else {
-				return por.getGolesMarcados()-this.getGolesMarcados();
+				return (short) por.getGolesMarcados()-this.getGolesMarcados();
 				}
 		}
 	}

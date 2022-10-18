@@ -35,10 +35,10 @@ public class Portero extends Futbolista implements Comparable<Portero> {
 			return 0;
 			}
 		else {if (this.getGolesRecibidos()>por.getGolesRecibidos()){
-			return this.getGolesRecibidos()-por.getGolesRecibidos();
+			return (short) this.getGolesRecibidos()-por.getGolesRecibidos();
 			}
 		else{
-			return por.getGolesRecibidos()-this.getGolesRecibidos();
+			return (short) por.getGolesRecibidos()-this.getGolesRecibidos();
 			} }
 	}
 }
