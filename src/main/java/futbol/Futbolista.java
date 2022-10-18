@@ -42,7 +42,7 @@ public class Futbolista implements Comparable<Futbolista>,nece {
 	public boolean jugarConLasManos() {
 		return false;
 	}
-	public int compareTo(Futbbolista por) {
+	public int compareTo(Futbolista por) {
 		if (this.nombre==por.getNombre()) {
 			if(this.edad==por.getEdad()) {
 				if (this.posicion==por.getPosicion()) {
