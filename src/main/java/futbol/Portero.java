@@ -29,7 +29,7 @@ public class Portero extends Futbolista implements Comparable<Portero> {
 	public String toString() {
 		return"El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion(	)+" con el dorsal "+this.getDorsal()+ ". Le han marcado "+this.getGolesRecibidos()+".";
 	}
-	public int compareTo(Portero por) {
+	public int compareTo(Futbolista por) {
 		if (this.getGolesRecibidos()==por.getGolesRecibidos()){
 			return 0;
 			}
