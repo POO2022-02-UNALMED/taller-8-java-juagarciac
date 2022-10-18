@@ -6,13 +6,13 @@ public class Futbolista2 implements nece {
 	private int edad;
 	private final String posicion;
 	
-	public Futbolista(String nombre,int edad,String posicion) {
+	public Futbolista2(String nombre,int edad,String posicion) {
 		this.nombre=nombre;
 		this.edad=edad;
 		this.posicion=posicion;
 	}
 	
-	public Futbolista() {
+	public Futbolista2() {
 		this.nombre="Maradona";
 		this.edad=30;
 		this.posicion="delantero";
