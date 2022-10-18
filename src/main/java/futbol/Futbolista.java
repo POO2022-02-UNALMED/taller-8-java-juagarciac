@@ -61,16 +61,4 @@ public class Futbolista implements Comparable<Futbolista>,nece {
 		}
 		
 	}
-	public boolean compareTo(Futbolista por) {
-		switch(this.compareTo(por)) {
-		case 0: return false;
-			break;
-		case 1:return true;
-		break;
-		}
-	}
-	
-	
-	
-	
 }
