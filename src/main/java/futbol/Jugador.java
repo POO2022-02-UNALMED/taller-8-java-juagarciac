@@ -31,7 +31,6 @@ public class Jugador extends Futbolista implements Comparable<Jugador>, nece {
 	public String toString(){
 		return "El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion()+" con el dorsal "+this.getDorsal()+ ". Ha marcado "+this.getGolesMarcados()+".";
 	}
-	@Override
 	public int compareTo(Jugador por) {
 		if (this.getGolesMarcados()==por.getGolesMarcados()){
 			return 0;
