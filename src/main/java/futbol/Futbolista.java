@@ -43,6 +43,7 @@ public class Futbolista implements Comparable<Object>,nece {
 		return false;
 	}
 	public int compareTo(Object por) {
+		por=(Futbolista)por;
 		if (this.nombre==por.getNombre()) {
 			if(this.edad==por.getEdad()) {
 				if (this.posicion==por.getPosicion()) {
