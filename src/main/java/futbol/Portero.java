@@ -30,15 +30,15 @@ public class Portero extends Futbolista implements Comparable<Portero> {
 		return"El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion(	)+" con el dorsal "+this.getDorsal()+ ". Le han marcado "+this.getGolesRecibidos()+".";
 	}
 	@Override
-	public short compareTo(Portero por) {
+	public int compareTo(Portero por) {
 		if (this.getGolesRecibidos()==por.getGolesRecibidos()){
 			return 0;
 			}
 		else {if (this.getGolesRecibidos()>por.getGolesRecibidos()){
-			return (short) this.getGolesRecibidos()-por.getGolesRecibidos();
+			return (short) this.getGolesRecibidos()- (short)por.getGolesRecibidos();
 			}
 		else{
-			return (short) por.getGolesRecibidos()-this.getGolesRecibidos();
+			return (short) por.getGolesRecibidos()- (short) this.getGolesRecibidos();
 			} }
 	}
 }
