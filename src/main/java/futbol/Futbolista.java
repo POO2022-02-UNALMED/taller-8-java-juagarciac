@@ -1,7 +1,7 @@
 package futbol;
 import java.util.ArrayList;
 
-public class Futbolista implements Comparable<Futbolista>,nece {
+public class Futbolista implements Comparable<Object>,nece {
 	private String nombre;
 	private int edad;
 	private final String posicion;
