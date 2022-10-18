@@ -25,9 +25,11 @@ public class Portero extends Futbolista implements Comparable<Portero> {
 	public void setDorsal(byte dorsal) {
 		this.dorsal=dorsal;
 	}
+	@Override
 	public String toString() {
 		return"El futbolista "+this.getNombre()+" tiene "+this.getEdad()+ ", y juega de "+this.getPosicion(	)+" con el dorsal "+this.getDorsal()+ ". Le han marcado "+this.getGolesRecibidos()+".";
 	}
+	@Override
 	public short compareTo(Portero por) {
 		if (this.getGolesRecibidos()==por.getGolesRecibidos()){
 			return 0;
